@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 html, body {
   height: 100%;
 }
@@ -12,6 +16,10 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3, p {
+  cursor: default;
 }
 
 .title, .subtitle {
@@ -60,6 +68,9 @@ body {
   position: fixed;
   width: 100px;
   z-index: 70;
+  @media (max-width: 550px) {
+    width: 50px;
+  }
 }
 
 .touch-tap {
